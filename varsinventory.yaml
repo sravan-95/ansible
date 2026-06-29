@@ -4,4 +4,4 @@
   tasks:
    - name: print data
      debug:
-      msg: "hi, i am learning {{COURSE}}
+      msg: "hi, i am learning {{COURSE}}"
