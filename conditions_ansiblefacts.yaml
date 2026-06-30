@@ -1,6 +1,5 @@
 - name: conditions using ansible_facts
   hosts: frontend
-  connection: local
   tasks:
   - name: print if redhat
     debug:
