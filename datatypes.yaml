@@ -15,9 +15,9 @@
   tasks:
   - name: pint information
     debug:
-      msg: 
-       name: {{course}}
-       duration: {{duration_in_hrs}}
-       live sessions: {{is_live_sessions}}
-       topics: {{topics}}
-       trainer and course duration details: {{more_details}}
+      msg: |
+       name: {{ course }}
+       duration: {{ duration_in_hrs }}
+       live sessions: {{ is_live_sessions }}
+       topics: {{ topics }}
+       trainer and course duration details: {{ more_details }}
