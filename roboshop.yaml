@@ -55,8 +55,8 @@
     record: "{{ item }}.{{ domain_name }}"
     ttl: 1
     type: A
-    loop: "{{ instances }}"
-    when: action == "delete"
+  loop: "{{ instances }}"
+  when: action == "delete"
 
 - name: delete r53 record for frontend
   amazon.aws.route53:
