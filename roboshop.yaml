@@ -55,17 +55,17 @@
     record: "{{ item }}.{{ domain_name }}"
     ttl: 1
     type: A
-    loop: "{{ ec2_output.results }}"
+    loop: "{{ instances }}"
     when: action == "delete"
 
-- name: delete r53 records
+- name: delete r53 record for frontend
   amazon.aws.route53:
     state: absent
     zone: "{{ domain_name }}"
     record: "{{ domain_name }}"
     ttl: 1
     type: A
-    loop: "{{ ec2_output.results }}"
+    loop: "{{ instances }}"
     when: 
      - action == "delete"
      - item == "frontend"
