@@ -8,3 +8,4 @@ CART_HOST: cart.daws90.fun
 USER_HOST: user.daws90.fun
 RABBITMQ_HOST: rabbitmq.daws90.fun
 SHIPPING_HOST: shipping.daws90.fun
+PAYMENT_HOST: payment.daws90.fun
